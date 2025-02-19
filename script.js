@@ -9,14 +9,14 @@ var blurr = document.querySelector("#cursor-blur");
 //     blur.style.top = dets.y - 250 + "px";
 // });
 
-window.addEventListener("mousemove", function (dets) {
+document.addEventListener("mousemove", function (dets) {
   gsap.to(crsr, {
     x: dets.x,
     y: dets.y,
     duration: 0.6,
   });
 });
-window.addEventListener("mousemove", function (dets) {
+document.addEventListener("mousemove", function (dets) {
   gsap.to(blurr, {
     x: dets.x,
     y: dets.y,
